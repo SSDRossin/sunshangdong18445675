@@ -1,0 +1,83 @@
+
+
+
+<form action="/Project/create" method="POST">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="http://localhost:1337/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="http://localhost:1337/Project/search">Search</a>
+                <a class="nav-item nav-link" href="http://localhost:1337/">Create</a>
+                <a class="nav-item nav-link" href="http://localhost:1337/project/admin">Admin</a>
+              </div>
+            </div>
+          </nav>
+          <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Project Management System</h1>
+                  <p class="lead">HKBU Project Management System is a web-based system for department and student societies to broadcast Projects and acitivities as well as registration.</p>
+                </div>
+              </div>
+    <div class="form-group">
+        <label>Project Name:</label><br>
+        <input type="text" class="form-control" name="Project[name]" required>
+    </div>
+    <div class="form-group">
+        <label>Short Description:</label><br>
+        <input type="text" class="form-control" name="Project[sdes]" required>
+    </div>
+    <div class="form-group">
+        <label>Full Description:</label><br>
+        <input type="text" class="form-control" name="Project[fdes]" required>
+    </div>
+    <div class="form-group">
+        <label>Image URL:</label><br>
+        <input type="text" class="form-control" name="Project[URL]" required>
+    </div>
+    <div>
+        <span>Organizer:</span><br>
+        <select onchange="organizer(this.value)">
+                <option value="nan">Please pick one:</option>
+            <option value="a">Amy</option>
+            <option value="b">Brown</option>
+            <option value="c">Cici</option>
+            <option value="d">David</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Project Date:</label><br>
+        <input type="text" class="form-control" name="Project[date]" required>
+    </div>
+    <div class="form-group">
+        <label>Time</label><br>
+        <input type="text" class="form-control" name="Project[time]" required>
+    </div>
+    <div>
+        <span>Venue:</span><br>
+        <select onchange="venue(this.value)">
+                <option value="nan">Please pick one:</option>
+            <option value="oew">OEW1002</option>
+            <option value="oee">OEE1017</option>
+            <option value="abc">ABC202</option>
+            <option value="abb">ABB302</option>
+        </select>
+    </div>
+    <div>
+        <span>Quota:</span><br>
+        <select onchange="quota(this.value)">
+                <option value="nan">Please pick one:</option>
+            <option value="one">100</option>
+            <option value="two">200</option>
+            <option value="three">300</option>
+            <option value="free">Free</option>
+        </select><br>
+        <span>
+            <input type="radio" value="highlit">Highlit the Project
+      </span>
+   
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <div>
+
+       
+</form>

@@ -1,0 +1,6 @@
+<!--index.ejs-->
+<table class="table">
+    <% projects.forEach( function(model) { %>
+        <tr><td><%= model.name %></td><td><%= model.sdes %></td><td><%= model.fdes %></td><td><%= model.URL %></td><td><%= model.date %></td><td><%= model.time %></td><td><%= model.id %></td></tr>
+    <% }); %>
+</table>

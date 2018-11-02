@@ -1,0 +1,6 @@
+<%= project.name %>,<%= project.sdes %>,<%= project.fdes %>,<%= project.URL %>,<%= project.date %>,<%= project.time %>,<%= project.id %>
+<br><br>
+
+<form method="POST" action="/project/delete/<%= project.id %>">
+    <button class="btn btn-danger" type="summit">Delete</button>
+</form>
